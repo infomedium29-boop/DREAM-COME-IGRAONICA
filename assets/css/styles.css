@@ -7,3 +7,61 @@
 @media(min-width:1440px){:root{--container:min(1260px,calc(100% - 64px))}.hero-art img{max-height:670px;object-fit:cover}}
 @media(orientation:landscape) and (max-height:620px){.hero{min-height:auto}.intro-logo{width:210px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.float-bubble{display:none}}
+
+
+/* MOBILE POLISH */
+.media-card{display:flex;flex-direction:column}
+.media-card .card-body{display:flex;flex-direction:column;gap:10px;flex:1}
+.media-card .btn{margin-top:auto}
+.page-hero img,.hero-art img{aspect-ratio:3/2;object-fit:cover}
+.card img{border-radius:24px}
+.hero .actions .btn,.page-hero .actions .btn{min-width:unset}
+
+@media(max-width:640px){
+  :root{--container:min(100% - 24px, 100% - 24px);--radius:24px}
+  h1{font-size:clamp(2.1rem,11vw,3rem)}
+  h2{font-size:clamp(1.7rem,8vw,2.2rem)}
+  h3{font-size:1.18rem}
+  p,.lead{font-size:1rem}
+  .section{padding:52px 0}
+  .section.tight{padding:44px 0}
+  .hero{min-height:auto;padding:30px 0 46px}
+  .page-hero{padding:44px 0 30px}
+  .hero-grid,.page-hero-grid,.contact-grid,.footer-grid{gap:22px}
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .nav-wrap{min-height:72px;gap:10px}
+  .header.scrolled .nav-wrap{min-height:64px}
+  .brand img{width:138px}
+  .menu-btn{width:42px;height:42px}
+  .mobile-menu{inset:72px 12px auto;border-radius:22px}
+  .card{padding:20px}
+  .media-card{border-radius:24px}
+  .media-card img{aspect-ratio:16/10}
+  .media-card .card-body{padding:18px}
+  .pricing-card{padding-top:28px}
+  .price{font-size:1.7rem}
+  .table-wrap{margin:0 -4px}
+  .timeline-item{grid-template-columns:40px 1fr;gap:12px}
+  .timeline-item:before{width:36px;height:36px}
+  .checks{grid-template-columns:1fr}
+  .check-field{align-items:flex-start}
+  .gallery-grid{gap:10px}
+  .actions{display:grid;grid-template-columns:1fr;gap:10px}
+  .actions .btn{width:100%}
+  .trust-row{gap:10px}
+  .trust-item{font-size:.84rem}
+  .footer{padding:58px 0 110px}
+  .footer-bottom{font-size:.84rem}
+  .intro-skip{right:14px;bottom:14px}
+  .cookie{left:12px;right:12px;bottom:12px;padding:18px;border-radius:20px}
+}
+
+@media(max-width:420px){
+  .gallery-grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .form-grid{grid-template-columns:1fr}
+  .hero-copy .eyebrow,.section-head .eyebrow{font-size:.72rem}
+  .nav-actions{gap:8px}
+  .lang a{padding:.33rem .42rem}
+}

@@ -37,3 +37,8 @@ Replace the SVG files under `/assets/img/` with real photography (prefer AVIF or
 - gift-card.svg
 
 Keep `logo.svg` until the real logo is supplied, then replace it with the final logo using the same path or update references.
+
+
+## Napomena o fotografijama
+- Trenutne fotografije u /assets/img su AI-generated AVIF visuals optimizirane za brže učitavanje.
+- Po želji ih kasnije samo zamijenite stvarnim AVIF fotografijama istih naziva datoteka.
