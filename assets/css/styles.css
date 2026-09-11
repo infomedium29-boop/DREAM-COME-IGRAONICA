@@ -166,3 +166,69 @@
   .grid-3 .media-card .btn,
   .grid-4 .media-card .btn{font-size:.84rem !important;padding:.68rem .6rem !important}
 }
+
+
+/* MOBILE FEATURE IMAGE + CONTACT ALIGN FIX v4 */
+@media (max-width: 640px){
+  /* image + text promo blocks */
+  main .section .container.grid.grid-2 > img.reveal,
+  main .section .container.grid.grid-2 > img{
+    width:100% !important;
+    aspect-ratio:1/1 !important;
+    height:auto !important;
+    object-fit:cover !important;
+    border-radius:26px !important;
+    box-shadow:var(--shadow-sm);
+  }
+
+  main .section .container.grid.grid-2 > div.reveal,
+  main .section .container.grid.grid-2 > div:not(.icon-box){
+    align-self:start;
+  }
+
+  /* contact extras checkboxes */
+  .checks{
+    grid-template-columns:1fr !important;
+    gap:10px !important;
+  }
+
+  .checks .check-field{
+    display:grid !important;
+    grid-template-columns:22px 1fr !important;
+    align-items:center !important;
+    gap:14px !important;
+    padding:16px 18px !important;
+    min-height:64px;
+    text-align:left !important;
+  }
+
+  .checks .check-field input[type="checkbox"]{
+    margin:0 !important;
+    width:18px;
+    height:18px;
+    justify-self:center;
+    align-self:center;
+  }
+
+  .checks .check-field,
+  label.check-field.field.full{
+    font-weight:800;
+    line-height:1.35;
+  }
+
+  label.check-field.field.full{
+    display:grid !important;
+    grid-template-columns:22px 1fr !important;
+    align-items:center !important;
+    gap:14px !important;
+    padding:16px 18px !important;
+    text-align:left !important;
+  }
+
+  label.check-field.field.full input[type="checkbox"]{
+    margin:0 !important;
+    width:18px;
+    height:18px;
+    justify-self:center;
+  }
+}
